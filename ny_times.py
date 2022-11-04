@@ -1,14 +1,15 @@
 import requests
-import json
 import pandas as pd
 import datetime as dt
+import secrets
 
+SECRET_API_KEY = secrets.SECRET_API_KEY
 
 def get_todays_articles():
     today = dt.date.today()
     year = today.year
     month = today.month
-    mykey = 'SECRET_API_KEY'
+    mykey = SECRET_API_KEY
 
     years = [year-x for x in [25,50,100,150]]
     multi_yr_df = pd.DataFrame()
