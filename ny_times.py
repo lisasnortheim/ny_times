@@ -8,7 +8,7 @@ def get_todays_articles():
     today = dt.date.today()
     year = today.year
     month = today.month
-    mykey = 'WDi0mXuIcl8iuL6Dxj4YsC7segqNd7i1'
+    mykey = 'SECRET_API_KEY'
 
     years = [year-x for x in [25,50,100,150]]
     multi_yr_df = pd.DataFrame()
